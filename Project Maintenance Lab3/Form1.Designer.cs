@@ -138,7 +138,7 @@ namespace Project_Maintenance_Lab3
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView);
             this.Name = "Form1";
-            this.Text = "Project Maintenance App";
+            this.Text = "Product Maintenance App";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
