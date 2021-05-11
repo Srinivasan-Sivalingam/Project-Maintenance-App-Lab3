@@ -90,7 +90,7 @@ namespace Project_Maintenance_Lab3
             this.VersionTxt.Location = new System.Drawing.Point(111, 90);
             this.VersionTxt.Name = "VersionTxt";
             this.VersionTxt.Size = new System.Drawing.Size(100, 23);
-            this.VersionTxt.TabIndex = 1;
+            this.VersionTxt.TabIndex = 3;
             this.VersionTxt.Validating += new System.ComponentModel.CancelEventHandler(this.VersionTxt_Validating);
             // 
             // ReleaseDateTxt
@@ -98,7 +98,7 @@ namespace Project_Maintenance_Lab3
             this.ReleaseDateTxt.Location = new System.Drawing.Point(111, 125);
             this.ReleaseDateTxt.Name = "ReleaseDateTxt";
             this.ReleaseDateTxt.Size = new System.Drawing.Size(100, 23);
-            this.ReleaseDateTxt.TabIndex = 1;
+            this.ReleaseDateTxt.TabIndex = 4;
             this.ReleaseDateTxt.Validating += new System.ComponentModel.CancelEventHandler(this.ReleaseDateTxt_Validating);
             // 
             // NameTxt
@@ -106,12 +106,12 @@ namespace Project_Maintenance_Lab3
             this.NameTxt.Location = new System.Drawing.Point(111, 56);
             this.NameTxt.Name = "NameTxt";
             this.NameTxt.Size = new System.Drawing.Size(100, 23);
-            this.NameTxt.TabIndex = 1;
-            this.NameTxt.TextChanged += new System.EventHandler(this.NameTxt_TextChanged);
+            this.NameTxt.TabIndex = 2;
+            this.NameTxt.Validating += new System.ComponentModel.CancelEventHandler(this.NameTxt_Validating);
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(94, 197);
+            this.btnOk.Location = new System.Drawing.Point(45, 178);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 2;
@@ -121,7 +121,7 @@ namespace Project_Maintenance_Lab3
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(203, 197);
+            this.btnCancel.Location = new System.Drawing.Point(136, 178);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
@@ -133,7 +133,8 @@ namespace Project_Maintenance_Lab3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 352);
+            this.BackColor = System.Drawing.Color.Peru;
+            this.ClientSize = new System.Drawing.Size(378, 352);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.ReleaseDateTxt);

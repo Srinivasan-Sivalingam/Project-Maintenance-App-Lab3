@@ -75,13 +75,6 @@ namespace Project_Maintenance_Lab3
             this.Close();
         }
 
-        private void NameTxt_TextChanged(object sender, EventArgs e)
-        {
-            if (NameTxt.Text.Length > 50)
-                MessageBox.Show("Text should be less than 50 char");
-                NameTxt.Focus();
-        }
-
         private void VersionTxt_Validating(object sender, CancelEventArgs e)
         {
             if (NameTxt.Text == "")
@@ -106,8 +99,15 @@ namespace Project_Maintenance_Lab3
         {
             if (!DateTime.TryParse(ReleaseDateTxt.Text, out _))
             {
-                MessageBox.Show("Please enter text or numbers not special Char");
+                MessageBox.Show("Please enter text or numbers not special Char or empty");
             }
+        }
+
+        private void NameTxt_Validating(object sender, CancelEventArgs e)
+        {
+            if (NameTxt.Text.Length > 50)
+            MessageBox.Show("Text should be less than 50 char");
+            NameTxt.Focus();
         }
     }
 }
